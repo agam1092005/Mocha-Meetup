@@ -1,0 +1,50 @@
+
+
+<h4 class="ui center aligned medium icon header">
+  <i class="inverted orange circular coffee icon"></i>
+  Drink coffee and chat along
+</h4>
+
+
+<div class="ui two column grid">
+    <div class="ui twelve wide column">
+        <div class="ui fluid raised card chatbox">
+            <div class="content">
+                <div class="ui feed">
+                    <%= render @messages %>
+                </div>
+            </div>
+                <div class="extra content">
+                <%= form_for(@message, html: {class: "ui reply form", role: "form"}, url: message_path, remote: true) do |txt| %>
+                        <div class="field">
+                            <div class="ui fluid icon input">
+                            <%= txt.text_field :body %>
+                            <%= txt.button '<i class="orange edit icon"></i>'.html_safe %>
+                            </div>
+                        </div>
+                    <% end %>
+                </div>
+        </div>
+    </div>
+
+
+    <div class="ui four wide column">
+        <div class="ui fluid raised card chatbox">
+            <div class="content">
+                <div class="ui vertical menu">
+                    <a class="active item">
+                    Home
+                    </a>
+                    <a class="item">
+                    Messages
+                    </a>
+                    <a class="item">
+                    Friends
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

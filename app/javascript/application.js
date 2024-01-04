@@ -8,7 +8,3 @@ import '@doabit/semantic-ui-sass'
 //= require semantic-ui
 //= require semantic-ui/modal
 //= require semantic-ui/dropdown
-
-$(document).on('turbolinks:load', function() {
-    $('.ui.dropdown').dropdown();
-})
