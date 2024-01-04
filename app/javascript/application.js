@@ -2,9 +2,22 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 import '@doabit/semantic-ui-sass'
+import "semantic-ui"
+import * as jquery from "jquery"
 
 //= require jquery
 //= require turbolinks
 //= require semantic-ui
 //= require semantic-ui/modal
 //= require semantic-ui/dropdown
+import "./channels"
+
+
+
+scroll_bottom = function() {
+    if ($('#messages').length > 0) {
+      $('#messages').scrollTop($('#messages')[0].scrollHeight);
+    }
+  }
+
+scroll_bottom();
