@@ -23,4 +23,14 @@
         <%= yield %>
       </div>
   </body>
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      const container = document.getElementById("messages");
+      
+      const messages = document.getElementsByClassName("event");
+      if(messages.length > 0) {
+        container.scrollTop = container.scrollHeight
+      }
+        });
+  </script>
 </html>
