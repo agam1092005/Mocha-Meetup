@@ -1,24 +1,7 @@
-# README
+# MochaMeetup
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+MochaMeetup is a meetup/event management system developed using Ruby.
 
-Things you may want to cover:
+Built entirely on the robust Ruby on Rails framework, ensuring scalability and maintainability.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Utilizes responsive HTML, CSS, and JavaScript on the frontend to deliver a seamless user experience.
